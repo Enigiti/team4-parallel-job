@@ -28,7 +28,7 @@ pipeline{
         stage ('4-closing'){
             steps{
                 echo "We are done"
-                echo "Good job"
+                echo "Good job as always"
             }
         }
     }
