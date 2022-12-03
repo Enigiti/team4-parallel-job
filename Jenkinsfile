@@ -6,7 +6,7 @@ pipeline{
                 sh 'cat /etc/passwd'
             }
         }
-        stage ('2-paraleel-jobs'){
+        stage ('2-parallel-jobs'){
             parallel{
                 stage ('1-subjob1'){
                     steps{
@@ -28,7 +28,7 @@ pipeline{
         stage ('4-closing'){
             steps{
                 echo "We are done"
-                echo "Good job as always"
+                echo "Good job, well done"
             }
         }
     }
